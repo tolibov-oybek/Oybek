@@ -8,7 +8,7 @@ function About() {
         <div className="about-wrapper">
             <div className="about-content">
                 <img src={AboutImg} alt="About"
-                    width={"1071px"} height={"749px"}
+                    width={"1072px"} height={"749px"}
                 />
                 <div className="about-text">
                     <h1>О нас</h1>
