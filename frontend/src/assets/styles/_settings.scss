@@ -1,0 +1,23 @@
+@use "./resets";
+@import "./samples";
+
+$warning: #ff6600;
+$warning-t: #ff660050;
+$dark: #141414;
+$dark-lighter: #202020;
+$success: #00cc00;
+$light: #ffffff;
+
+%link {
+    @extend %link-style;
+}
+
+%blue-btn {
+    color: $light;
+    background: linear-gradient(119deg, rgba(4, 153, 221, 1) 50%, rgba(23, 193, 188, 1) 85%);
+    height: 50px;
+    width: 230px;
+    border: none;
+    border-radius: 30px;
+
+}

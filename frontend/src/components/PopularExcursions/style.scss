@@ -1,0 +1,63 @@
+@import "../../assets/styles/settings";
+
+.p-excursions-wrapper{
+    margin: 10px 100px;
+    margin-top: 300px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 30px;
+        span:first-child{
+            font-size: 24px;
+            font-weight: bolder;
+            color: #0499DD;
+        }
+    }
+    .values-wrapper{
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        gap: 10px;
+        margin-top: 20px;
+        height: 100vh;
+        .value-item{
+
+            .value-info{
+                padding: 230px 20px;
+                color: $light;
+                position: relative;
+
+                h3{
+                    margin: 12px 0;
+                    color: #FFC700;
+                    size: 14px;
+                }
+
+                h6{
+                    display: inline;
+                    justify-content: center;
+                    align-items: center;
+                }
+                p{
+                    font-size: x-small;
+                    position: absolute;
+                    bottom: 100px;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 0;
+                }
+                button{
+                    @extend %blue-btn;
+                    position: absolute;
+                    width: 160px;
+                    height: 40px;
+                    bottom: 40px ;
+                    right: 180px;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+}
