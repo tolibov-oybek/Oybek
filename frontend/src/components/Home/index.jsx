@@ -8,6 +8,9 @@ import Rectangle3 from "../../assets/images/Rectangle3.png"
 import Play from "../../assets/images/play.png"
 import PopularExcursions from "../PopularExcursions"
 import About from "../About"
+import Galery from "../Galery"
+import ContactsFrom from "../ContactsForm"
+
 
 function Home() {
     return (
@@ -38,6 +41,11 @@ function Home() {
             <br /><br />
             <About />
             <br /><br />
+            <Galery />
+            <br /><br />
+            <ContactsFrom/>
+            <br /><br />
+
         </div>
     );
 }

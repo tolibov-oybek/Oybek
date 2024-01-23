@@ -1,6 +1,5 @@
 import "./style.scss"
 import Values from "./Values.jsx"
-import BGC from "../../assets/images/Rectangle1.png"
 import AboutImg from "../../assets/images/Rectangle4.png"
 
 function About() {

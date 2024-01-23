@@ -24,7 +24,7 @@
         .value-item{
 
             .value-info{
-                padding: 230px 20px;
+                padding: 230px 30px 0 30px;
                 color: $light;
                 position: relative;
 
@@ -45,7 +45,8 @@
                     bottom: 100px;
                     justify-content: center;
                     align-items: center;
-                    padding: 10px 0;
+                    padding: 10px 10px 0 0;
+
                 }
                 button{
                     @extend %blue-btn;

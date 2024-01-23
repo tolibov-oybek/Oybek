@@ -1,8 +1,6 @@
 @use "./resets";
 @import "./samples";
 
-$warning: #ff6600;
-$warning-t: #ff660050;
 $dark: #141414;
 $dark-lighter: #202020;
 $success: #00cc00;
@@ -19,5 +17,11 @@ $light: #ffffff;
     width: 230px;
     border: none;
     border-radius: 30px;
+    &:hover{
+        transform: scale(0.9);
+    }
+    &:active{
+        transform: scale(0.8);
+    }
 
 }
