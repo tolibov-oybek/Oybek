@@ -1,9 +1,10 @@
 @import "../../assets/styles/settings";
 
 .p-excursions-wrapper{
-    margin: 10px 100px;
+    margin: 10px;
     margin-top: 300px;
     .top{
+        margin: 0 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,7 +23,7 @@
         margin-top: 20px;
         height: 100vh;
         .value-item{
-
+            margin: 1px 50px;
             .value-info{
                 padding: 230px 30px 0 30px;
                 color: $light;

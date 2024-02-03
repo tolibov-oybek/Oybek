@@ -9,6 +9,7 @@ import Play from "../../assets/images/play.png"
 import PopularExcursions from "../PopularExcursions"
 import About from "../About"
 import Galery from "../Galery"
+import Reviews from "../Reviews"
 import ContactsFrom from "../ContactsForm"
 
 
@@ -36,14 +37,15 @@ function Home() {
                 <img className="play-img" src={Play} alt="Play" />
                 <img src={Rectangle3} alt="Rectangle3" />
             </div>
-
             <PopularExcursions />
             <br /><br />
             <About />
             <br /><br />
             <Galery />
             <br /><br />
-            <ContactsFrom/>
+            <Reviews/>
+            <br /><br />
+            <ContactsFrom />
             <br /><br />
 
         </div>

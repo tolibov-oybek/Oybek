@@ -1,0 +1,37 @@
+.reviews-wrapper {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 30px;
+        padding: 40px 130px;
+
+        span:first-child {
+            font-size: 24px;
+            font-weight: bolder;
+            color: #0499DD;
+        }
+    }
+    gap: 20px;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 740px;
+        height: 322px;
+        margin: 20px;
+        background-color: #EDEDED;
+        border-radius: 10px;
+        padding: 20px 30px;
+        img{
+            margin: 15px;
+        }
+        div {
+            
+            h3
+             {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

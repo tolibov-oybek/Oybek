@@ -1,4 +1,5 @@
 import "./style.scss"
+import Marquee from "react-fast-marquee";
 import Values from "./Values.jsx"
 function PopularExcursions(props) {
     return (
@@ -8,6 +9,7 @@ function PopularExcursions(props) {
                 <span>Смотреть все</span>
             </div>
             <Values/>
+
         </div>
     );
 }

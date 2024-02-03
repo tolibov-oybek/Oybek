@@ -6,6 +6,9 @@ $dark-lighter: #202020;
 $success: #00cc00;
 $light: #ffffff;
 
+$large: 768px;
+$small: 428px;
+
 %link {
     @extend %link-style;
 }
