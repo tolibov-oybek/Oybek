@@ -21,7 +21,7 @@ function Home() {
                 <div className="left">
                     <h1>ПУТЕШЕСТВУЙ</h1>
                     <h4>вместе с</h4>
-                    <h1 className="pero">PERO TRAVEL</h1>
+                    <h1 className="pero"><span>PERO</span> <span>TRAVEL</span> </h1>
                     <button className="blue-btn">К экскурсиям</button>
                 </div>
 
@@ -37,6 +37,8 @@ function Home() {
                 <img className="play-img" src={Play} alt="Play" />
                 <img src={Rectangle3} alt="Rectangle3" />
             </div>
+
+
             <PopularExcursions />
             <br /><br />
             <About />

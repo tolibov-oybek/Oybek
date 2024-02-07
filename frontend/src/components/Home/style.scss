@@ -4,6 +4,7 @@ $bg-img: url('../../assets/images/Rectangle1.png');
 
 .home-wrapper {
     position: relative;
+
     .home-content {
         display: grid;
         grid-template-columns: 4fr 1fr;
@@ -17,6 +18,7 @@ $bg-img: url('../../assets/images/Rectangle1.png');
         justify-content: center;
         align-items: center;
         padding: 0 160px;
+
         .left {
             h1:first-child {
                 font-size: 95px;
@@ -34,8 +36,13 @@ $bg-img: url('../../assets/images/Rectangle1.png');
             }
 
             .pero {
+                width: 723px;
                 font-size: 110px;
-                font-family: 'Rubik Scribble', system-ui;
+
+                span {
+                    font-family: 'Rubik Scribble', system-ui;
+                }
+
                 color: snow;
                 padding: 0;
                 margin-top: 19px;
@@ -63,14 +70,16 @@ $bg-img: url('../../assets/images/Rectangle1.png');
         position: absolute;
         top: 680px;
         right: 0px;
+
         img:first-child {
             margin-right: 10px;
             display: inline-block;
             width: 360px;
-            height: 227px;  
+            height: 227px;
 
         }
-        .play-img{
+
+        .play-img {
             position: absolute;
             justify-content: center;
             align-items: center;
@@ -78,10 +87,135 @@ $bg-img: url('../../assets/images/Rectangle1.png');
             top: 75px;
         }
 
-        img:last-child{
+        img:last-child {
             display: inline-block;
             height: 227px;
-            
+        }
+    }
+
+    @media (max-width: $large) {
+        .home-content {
+            grid-template-columns: 2fr 1fr;
+            padding: 0 80px;
+            gap: 20px;
+            line-height: 20px;
+
+            .left {
+                h1:first-child {
+                    font-size: 50px;
+                    font-family: monospace;
+                    color: #fff;
+                }
+
+                h4 {
+                    margin-left: 270px;
+                    font-size: 20px;
+                }
+
+                .pero {
+                    font-size: 70px;
+                    width: 463px;
+                    margin-top: 7px;
+
+                    span {
+                        margin-bottom: 40px;
+                        display: inline-block;
+                    }
+                }
+
+                .blue-btn {
+                    @extend %blue-btn;
+                    margin-top: 0;
+                    width: 200px;
+                    height: 50px;
+                }
+            }
+
+            .icons {
+                margin-left: 50px;
+
+                img {
+                    width: 30px;
+                    height: 20px;
+                }
+            }
+
+        }
+
+        .images {
+            top: 700px;
+
+            img:first-child {
+                margin-right: 10px;
+                width: 295px;
+                height: 187px;
+            }
+
+            .play-img {
+                right: 322px;
+                top: 55px;
+                width: 66px;
+            }
+
+            img:last-child {
+                display: inline-block;
+                height: 187px;
+            }
+        }
+    }
+
+    @media (max-width: $small) {
+
+        .home-content {
+            position: relative;
+            grid-template-columns: 1fr;
+            padding: 50px 30px;
+            gap: 20px;
+            line-height: 20px;
+
+            .left {
+                .pero {
+                    font-size: 70px;
+                    width: 300px;
+                }
+            }
+
+            .icons {
+                position: absolute;
+                left: 300px;
+                top: 550px;
+
+                img {
+                    width: 25px;
+                    height: 18px;
+                }
+            }
+
+        }
+
+        .images {
+            position: relative;
+            top: -80px;
+            img:first-child {
+                position: absolute;
+                left: 3px;
+                width: 250px;
+                height: 150px;
+
+            }
+
+            .play-img {
+                right: 268px;
+                top: 50px;
+                width: 45px;
+            }
+
+            img:last-child {
+
+                height: 150px;
+                position: absolute;
+                right: 0;
+            }
         }
     }
 }
