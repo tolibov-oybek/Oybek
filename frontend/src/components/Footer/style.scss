@@ -1,18 +1,38 @@
-.footer-wrapper{
+@import "../../assets/styles/settings";
+
+.footer-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 150px;
-    .links{
-       a {
-        color: #000;
-        text-decoration: none;
-        display: block;
-        padding: 3px 8px;
 
-        &:hover{
-            color: yellow;
+    .links {
+        a {
+            color: #000;
+            text-decoration: none;
+            display: block;
+            padding: 3px 8px;
+
+            &:hover {
+                color: yellow;
+            }
         }
     }
+
+
+    @media (max-width: $large) {
+        padding: 20px;
+        justify-content: space-evenly;
     }
+    @media (max-width: $small) {
+        padding: 10px;
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr ;
+        gap: 10px;
+        align-items: center;
+    }
+
 }
+
+// @media (max-wodth: $small) {}

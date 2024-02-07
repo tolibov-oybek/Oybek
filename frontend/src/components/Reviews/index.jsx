@@ -22,18 +22,17 @@ function Reviews() {
                     clickable: true,
                 }}
                 breakpoints={{
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
+                    230: {
+                        slidesPerView: 1.3,
+                        spaceBetween: 11,
+                    },
+                    430: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 55,
                     },
                     768: {
-                        slidesPerView: 4,
-                        spaceBetween: 40,
-                    },
-                    1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 50,
-                    },
+                        slidesPerView: 2,
+                    }
                 }}
                 onAutoplay={true}
                 speed={300}

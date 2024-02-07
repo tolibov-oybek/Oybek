@@ -13,7 +13,6 @@ function Galery() {
         <div className="galery-wrapper">
             <div className="top">
                 <span>Галерея</span>
-                <span>Смотреть все</span>
             </div>
             <div className="galery-content">
 
@@ -27,7 +26,7 @@ function Galery() {
                         </div>
                     </div>
                 </div>
-                <img src={Img_2} alt="galery-image-2" />
+                <img src={Img_2} alt="galery-image-2" id="mid" />
                 <div className="right">
                     <div>
                         <img src={Img_3} alt="galery-image-3" />

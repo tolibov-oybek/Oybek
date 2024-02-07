@@ -6,9 +6,7 @@ function About() {
     return (
         <div className="about-wrapper">
             <div className="about-content">
-                <img src={AboutImg} alt="About"
-                    width={"1072px"} height={"749px"}
-                />
+                <img src={AboutImg} alt="About"/>
                 <div className="about-text">
                     <h1>О нас</h1>
                     <br /> <br />

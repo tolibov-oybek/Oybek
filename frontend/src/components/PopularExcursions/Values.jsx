@@ -20,35 +20,39 @@ function Values(props) {
     return (
         <div className="values-wrapper">
             <Swiper
-                      slidesPerView={5}
-                      spaceBetween={55}
-                      pagination={{
-                        clickable: true,
-                      }}
-                      breakpoints={{
-                        640: {
-                          slidesPerView: 2,
-                          spaceBetween: 20,
-                        },
-                        768: {
-                          slidesPerView: 4,
-                          spaceBetween: 40,
-                        },
-                        1024: {
-                          slidesPerView: 5,
-                          spaceBetween: 50,
-                        },
-                      }}
-                      onAutoplay={true}
-                      speed={300}
-                      modules={[Pagination]}
-                      className="mySwiper"
+                slidesPerView={5}
+                spaceBetween={55}
+
+                pagination={{
+                    clickable: true,
+                }}
+                breakpoints={{
+                    230: {
+                        slidesPerView: 1,
+                        spaceBetween: 11,
+                    },
+                    430: {
+                        slidesPerView: 2,
+                        spaceBetween: 55,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 44,
+                    },
+                    1024: {
+                        slidesPerView: 4.8,
+                        spaceBetween: 44,
+                    },
+                }}
+                onAutoplay={true}
+                speed={300}
+                modules={[Pagination]}
+                className="mySwiper"
             >
-                <SwiperSlide>
+                <SwiperSlide >
                     <div className="value-item">
                         <div className='value-info' style={{
                             backgroundImage: `url(${Rectangle13})`,
-                            width: "360px",
                             height: "497px",
                             borderRadius: "10px"
                         }}>
@@ -65,7 +69,6 @@ function Values(props) {
                     <div className="value-item">
                         <div className='value-info' style={{
                             backgroundImage: `url(${Rectangle14})`,
-                            width: "360px",
                             height: "497px",
                             borderRadius: "10px"
                         }}>
@@ -82,7 +85,6 @@ function Values(props) {
                     <div className="value-item">
                         <div className='value-info' style={{
                             backgroundImage: `url(${Rectangle15})`,
-                            width: "360px",
                             height: "497px",
                             borderRadius: "10px"
                         }}>
@@ -99,7 +101,6 @@ function Values(props) {
                     <div className="value-item">
                         <div className='value-info' style={{
                             backgroundImage: `url(${Rectangle16})`,
-                            width: "360px",
                             height: "497px",
                             borderRadius: "10px"
                         }}>
@@ -116,7 +117,6 @@ function Values(props) {
                     <div className="value-item">
                         <div className='value-info' style={{
                             backgroundImage: `url(${Rectangle13})`,
-                            width: "360px",
                             height: "497px",
                             borderRadius: "10px"
                         }}>
@@ -133,7 +133,6 @@ function Values(props) {
                     <div className="value-item">
                         <div className='value-info' style={{
                             backgroundImage: `url(${Rectangle14})`,
-                            width: "360px",
                             height: "497px",
                             borderRadius: "10px"
                         }}>
@@ -150,7 +149,6 @@ function Values(props) {
                     <div className="value-item">
                         <div className='value-info' style={{
                             backgroundImage: `url(${Rectangle15})`,
-                            width: "360px",
                             height: "497px",
                             borderRadius: "10px"
                         }}>
@@ -167,7 +165,6 @@ function Values(props) {
                     <div className="value-item">
                         <div className='value-info' style={{
                             backgroundImage: `url(${Rectangle16})`,
-                            width: "360px",
                             height: "497px",
                             borderRadius: "10px"
                         }}>

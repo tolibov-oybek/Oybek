@@ -1,3 +1,5 @@
+@import "../../assets/styles/settings";
+
 .reviews-wrapper {
     .top {
         display: flex;
@@ -7,7 +9,7 @@
         padding: 40px 130px;
 
         span:first-child {
-            font-size: 24px;
+            font-size: 32px;
             font-weight: bolder;
             color: #0499DD;
         }
@@ -17,10 +19,11 @@
 
     .swiper {
         width: 100%;
-     
+
         .swiper-slide {
 
             margin-bottom: 20px;
+
             .container {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -45,4 +48,87 @@
             }
         }
     }
+
+    @media (max-width: $large) {
+        .top {
+            padding: 0 65px;
+
+            span:first-child {
+                font-size: 100px;
+                font-weight: bolder;
+            }
+
+            span:first-child {
+                font-size: 10px;
+                font-weight: bolder;
+            }
+        }
+
+        .swiper {
+            margin-bottom: 50px;
+            height: 40vh;
+
+            .swiper-slide {
+                width: 505px;
+                height: 246px;
+                margin-right: 50px;
+
+                .container {
+                    width: 505px;
+                    height: 246px;
+
+                    img {
+                        width: 168px;
+                        margin: 10px;
+                    }
+
+                    div {
+                        p {
+                            height: 170px;
+                            overflow: auto;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $small) {
+        .top{
+            padding: 0 10px;
+            span{
+                font-size: 10px;
+            }
+        }
+        .swiper {
+            margin-bottom: 10px;
+            height: 70vh;
+            .swiper-slide {
+                margin-right: 0px;
+                .container {
+                    width: 280px;
+                    height: 447px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    img {
+                        width: 80px;
+                        margin: 5px;
+                    }
+
+                    div {
+                        h3{
+                            margin-top: -30px;
+                        }
+                        p {
+                            height: auto;
+                            overflow: hidden;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

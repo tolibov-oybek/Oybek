@@ -2,7 +2,8 @@
 
 .about-wrapper {
     padding: 50px 0;
-    margin-top: 700px;
+    margin-top: 600px;
+
     h1 {
         color: #0499DD;
     }
@@ -13,6 +14,11 @@
         grid-template-columns: 1fr 3fr;
         gap: 50px;
         position: relative;
+
+        img {
+            width: 1071px;
+            height: 749px;
+        }
 
         .about-text {
             position: absolute;
@@ -31,6 +37,7 @@
     .values-content {
         margin: 50px 0;
         padding: 50px 150px;
+
         h1 {
             padding-bottom: 40px;
         }
@@ -80,5 +87,89 @@
                 }
             }
         }
+    }
+
+    @media (max-width: $large) {
+        .about-content {
+            margin: 30px 0;
+            grid-template-columns: 1fr 2fr;
+
+            img {
+                width: 600px;
+            }
+
+            .about-text {
+                width: 493px;
+                height: 433px;
+                padding: 40px;
+                top: 130px;
+                right: 40px;
+            }
+        }
+
+        .values-content {
+            margin: 50px 0;
+            padding: 30px 60px;
+
+            button {
+                margin-left: 200px;
+            }
+
+            .values-wrapper {
+                grid-template-columns: 1fr;
+
+                .value-item {
+                    img {
+                        left: 50px;
+                    }
+
+                    p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: $small) {
+        .about-content {
+            grid-template-columns: 1fr 1fr;
+            img {width: 300px;}
+            .about-text {
+                width: 380px;
+                height: 386px;
+                padding: 20px;
+                font-size: 13px;
+                right: 0;
+            }
+        }
+
+        .values-content {
+            margin: 50px 0;
+            padding: 30px;
+
+            .last {
+                width: 100%;
+                font-size: 13px
+            }
+            button {margin-left: 50px;}
+
+            .values-wrapper {
+                grid-template-columns: 1fr;
+
+                .value-item {
+                    img {
+                        left: -5px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
     }
 }

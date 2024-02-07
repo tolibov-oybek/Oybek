@@ -4,7 +4,6 @@ $Rectangle14: url('../../assets/images/Rectangle14.png');
 $Rectangle15: url('../../assets/images/Rectangle15.png');
 $Rectangle16: url('../../assets/images/Rectangle16.png');
 
-// backgroundImage: "../../assets/images/Rectangle13.png" 
 .p-excursions-wrapper {
     margin: 10px;
     margin-top: 300px;
@@ -34,27 +33,22 @@ $Rectangle16: url('../../assets/images/Rectangle16.png');
 
         .swiper {
             width: 100%;
-            height:75vh ;
+            height: 75vh;
             gap: 20px;
 
             .swiper-slide {
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
-                
                 margin: 20px;
                 background: #fff;
-                width: 370px;
                 display: inline-flex;
 
                 .value-item {
                     text-align: left;
-   
+                    width: 360px;
                     .value-info {
                         padding: 230px 30px 0 30px;
                         color: $light;
                         position: relative;
-                        
+
                         h3 {
                             margin: 12px 0;
                             color: #FFC700;
@@ -74,22 +68,57 @@ $Rectangle16: url('../../assets/images/Rectangle16.png');
                             justify-content: center;
                             align-items: center;
                             padding: 10px 10px 0 0;
-                            
                         }
-                        
+
                         button {
                             @extend %blue-btn;
                             position: absolute;
                             width: 160px;
                             height: 40px;
                             bottom: 40px;
-                            right: 180px;
+                            right: 130px;
                             justify-content: center;
                         }
                     }
                 }
             }
 
+        }
+    }
+
+    @media (max-width: $large) {
+        margin-top: 180px;
+
+        .top {
+            span:first-child {
+                font-size: 20px;
+            }
+
+            span:last-child {
+                font-size: 15px;
+            }
+        }
+
+        .values-wrapper {
+            .swiper {
+                .swiper-slide {
+                    width: 295px;
+                    margin-left: 5px;
+                    margin-right: 40px;
+
+                    .value-item {
+                        .value-info {
+                            width: 295px;
+                            padding: 200px 30px 0 20px;
+
+                            button {
+                                right: 120px;
+                            }
+                        }
+                    }
+                }
+
+            }
         }
     }
 
