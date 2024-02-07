@@ -1,13 +1,19 @@
 @import "../../assets/styles/settings";
 
 #navigation-wrapper {
+    position: absolute;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 10px;
     padding: 8px 170px;
     font-size: larger;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.693);
+    background-color: transparent;
+    top: 0;
+    h1{
+        margin-right: 800px;
+    }
     a {
         color: #fff;
         text-decoration: none;
@@ -19,5 +25,8 @@
         }
     }
     
+    @media (max-width: $large)  {
+        
+    }
 
 }

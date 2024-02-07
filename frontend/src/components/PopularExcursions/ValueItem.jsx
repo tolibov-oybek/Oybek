@@ -4,7 +4,7 @@ function ValueItem(props) {
     return (
         <div className="value-item">
             <div className='value-info' style={{
-                backgroundImage: `url(${props.image})`,
+                backgroundImage: ,
                 width:"360px",
                 height:"497px",
                 borderRadius:"10px"

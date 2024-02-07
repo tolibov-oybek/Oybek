@@ -1,64 +1,95 @@
 @import "../../assets/styles/settings";
+$Rectangle13: url('../../assets/images/Rectangle13.png');
+$Rectangle14: url('../../assets/images/Rectangle14.png');
+$Rectangle15: url('../../assets/images/Rectangle15.png');
+$Rectangle16: url('../../assets/images/Rectangle16.png');
 
-.p-excursions-wrapper{
+// backgroundImage: "../../assets/images/Rectangle13.png" 
+.p-excursions-wrapper {
     margin: 10px;
     margin-top: 300px;
-    .top{
+
+    .top {
         margin: 0 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 10px 30px;
-        span:first-child{
+
+        span:first-child {
             font-size: 24px;
             font-weight: bolder;
             color: #0499DD;
         }
     }
-    .values-wrapper{
+
+    .values-wrapper {
         display: flex;
         justify-content: space-between;
         position: absolute;
         gap: 10px;
         margin-top: 20px;
         height: 100vh;
-        .value-item{
-            margin: 1px 50px;
-            .value-info{
-                padding: 230px 30px 0 30px;
-                color: $light;
-                position: relative;
+        width: 99%;
 
-                h3{
-                    margin: 12px 0;
-                    color: #FFC700;
-                    size: 14px;
-                }
+        .swiper {
+            width: 100%;
+            height:75vh ;
+            gap: 20px;
 
-                h6{
-                    display: inline;
-                    justify-content: center;
-                    align-items: center;
-                }
-                p{
-                    font-size: x-small;
-                    position: absolute;
-                    bottom: 100px;
-                    justify-content: center;
-                    align-items: center;
-                    padding: 10px 10px 0 0;
+            .swiper-slide {
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                
+                margin: 20px;
+                background: #fff;
+                width: 370px;
+                display: inline-flex;
 
-                }
-                button{
-                    @extend %blue-btn;
-                    position: absolute;
-                    width: 160px;
-                    height: 40px;
-                    bottom: 40px ;
-                    right: 180px;
-                    justify-content: center;
+                .value-item {
+                    text-align: left;
+   
+                    .value-info {
+                        padding: 230px 30px 0 30px;
+                        color: $light;
+                        position: relative;
+                        
+                        h3 {
+                            margin: 12px 0;
+                            color: #FFC700;
+                            size: 14px;
+                        }
+
+                        h6 {
+                            display: inline;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        p {
+                            font-size: x-small;
+                            position: absolute;
+                            bottom: 100px;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 10px 10px 0 0;
+                            
+                        }
+                        
+                        button {
+                            @extend %blue-btn;
+                            position: absolute;
+                            width: 160px;
+                            height: 40px;
+                            bottom: 40px;
+                            right: 180px;
+                            justify-content: center;
+                        }
+                    }
                 }
             }
+
         }
     }
 
