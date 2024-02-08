@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import AllComponents from "./components/AllComponents";
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { context, globalReducer, initialState } from "./store";
 import { useReducer } from "react";
 

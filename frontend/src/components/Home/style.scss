@@ -38,11 +38,11 @@ $bg-img: url('../../assets/images/Rectangle1.png');
             .pero {
                 width: 723px;
                 font-size: 110px;
-
                 span {
+                    width: 50%;
                     font-family: 'Rubik Scribble', system-ui;
+                    display: inline;
                 }
-
                 color: snow;
                 padding: 0;
                 margin-top: 19px;

@@ -18,47 +18,50 @@ function ContactsForm() {
         message: form.notes
     };
 
-    function fireSetForm(e) {
+    function MemoryFn(e) {
         let key = e.target.name
         let val = e.target.value
         setForm({ ...form, [key]: val })
     }
 
-    function submit(e) {
+    function sendEMailJS_Fn(e) {
         e.preventDefault()
-
         emailjs.send('service_jb4tnyl', 'template_ggt809h', templateParams, 'f3KD_sdo4D3hisrBF')
-            .then((response) => {
-                toast.success('SUCCESS!', {
-                    theme: "dark"
-                });
-            }, (err) => {
-                toast.error('FAILED...', {
-                    theme: "dark"
-                });
-            });
+
+
+            .then((response) => { toast.success('SUCCESS!', { theme: "dark" }); },
+            (err) => { toast.error('FAILED...', { theme: "dark" }); });
     }
     return (
         <div className="contancts-f-wrapper">
-            <form onSubmit={submit}>
-
+            <form onSubmit={sendEMailJS_Fn}>
                 <div className="contacts-f-content">
                     <h1>Остались вопросы?</h1>
                     <h3>Оставь заявку и мы ответим</h3>
                     <input
                         id="full-name-input" type="text"
                         placeholder="Имя"
-                        onChange={fireSetForm} required
+                        onChange={MemoryFn} required
                     />
                     <input
                         id="number-input" type="text"
                         placeholder="Телефон"
-                        onChange={fireSetForm} name='number' required
+                        onChange={MemoryFn} name='number' required
                     />
                     <input
                         id="email-input" type="email"
                         placeholder="Почта"
-                        onChange={fireSetForm} name='email' required />
+                        onChange={MemoryFn} name='email' required />
+                    <textarea
+                        id="description-area"
+                        cols="10"
+                        rows="3"
+                        placeholder="Текст сообщения"
+                        name='notes'
+                        onChange={MemoryFn}
+                        required
+                    ></textarea>
+
                     <button className="blue-btn">Оставить заявку</button>
                 </div>
             </form>
