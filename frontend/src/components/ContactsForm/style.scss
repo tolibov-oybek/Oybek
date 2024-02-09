@@ -54,5 +54,41 @@
         }
     }
 
+    @media (max-width: $large) {
+        form {
+            .contacts-f-content {
+                padding: 60px 40px;
+                margin-left: 280px;
+                height: 643px;
+                width: 400px;    
+                textarea,input {
+                    width: 300px;
+                }
+                .blue-btn {
+                    margin-top: 50px;
+                    margin-left: 35px;
+                }
+            }
+        }        
+    }
+    @media (max-width: $small) {
+        height: 100vh;
+        background-position:-550px;
+        padding-top: 20px ;
+        form {
+            .contacts-f-content {
+                padding: 60px 40px;
+                margin-left: 20px;
+                width: 380px;    
+                textarea,input {
+                    width: 300px;
+                }
+                .blue-btn {
+                    margin-top: 50px;
+                    margin-left: 35px;
+                }
+            }
+        }        
+    }
 
 }

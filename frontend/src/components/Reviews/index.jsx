@@ -34,7 +34,6 @@ function Reviews() {
                         slidesPerView: 2,
                     }
                 }}
-                onAutoplay={true}
                 speed={300}
                 modules={[Pagination]}
                 className="mySwiper"

@@ -44,7 +44,6 @@ function Values(props) {
                         spaceBetween: 44,
                     },
                 }}
-                onAutoplay={true}
                 speed={300}
                 modules={[Pagination]}
                 className="mySwiper"
