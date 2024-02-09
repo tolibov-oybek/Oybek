@@ -3,37 +3,219 @@
 #navigation-wrapper {
     position: relative;
 
-    .nav-wrapper {
-        padding-top: 10px;
+    header {
         position: absolute;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        padding: 8px 170px;
-        font-size: larger;
-        align-items: center;
-        background-color: transparent;
         top: 0;
 
-        h1 {
-            margin-top: 10px;
+        .nav-wrapper {
+            background-color: transparent;
+            color: snow;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            padding: 20px 40px;
+
+
+
+            .left {
+                position: absolute;
+                left: 50px;
+                top: 10px;
+                a {
+                    text-decoration: none;
+                    color: snow;
+                }
+            }
+
+            display: flex;
+            justify-content: space-between;
+
+            .right {
+                padding-left: 1000px;
+
+                a,
+                button {
+                    text-decoration: none;
+                    color: snow;
+                    padding: 10px 20px;
+                    display: inline-block;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+            }
+
+
         }
 
-        .right {
-            margin-left: 890px;
-            a {
-                color: #fff;
-                text-decoration: none;
-                display: inline-block;
-                padding: 3px 8px;
+        .burger-menu-wrapper {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            align-items: center;
+            margin-left: 100px;
 
-                &:hover {
-                    color: yellow;
-                }
+            div {
+                width: 100%;
+                height: 5px;
+                background-color: $light;
+                border-radius: 5px;
+                margin-top: 5px;
+                transform-origin: left;
             }
         }
 
+        .burger-menu-wrapper,
+        #burger-menu-toggler {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            display: none;
+            z-index: 11;
+
+        }
+
+        #burger-menu-toggler {
+            opacity: 0;
+            z-index: 12;
+        }
+
+        @media (max-width: $large) {
+
+        .burger-menu-wrapper,
+            #burger-menu-toggler {
+                display: flex;
+            }
+
+            .burger-menu-wrapper {
+                &.opened {
+                    div {
+                        margin: 5px 0;
+                    }
+
+                    .middle {
+                        opacity: 0;
+                    }
+
+                    .top {
+                        transform: rotate(45deg);
+                    }
+
+                    .bottom {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+
+            .nav-wrapper {
+                .right {
+                    width: 0;
+                    height: 500px;
+                    backdrop-filter: blur(10px);
+                    background-color: #00000050;
+                    background-blend-mode: darken;
+                    overflow: hidden;
+                    position: absolute;
+                    right: -672px;
+                    top: 0;
+                    z-index: 10;
+                    display: none;
+                    .left{
+                        left: 110px;
+                        top: 10px;
+                    }
+                }
+            }
+
+            #burger-menu-toggler:checked+.nav-wrapper>.right {
+                width: 428px;
+                display: flex;
+                flex-direction: column;
+                padding: 100px;
+
+                .nav-links {
+                    display: flex;
+                    flex-direction: column;
+
+                    button {
+                        text-align: left;
+                    }
+                }
+
+                * {
+                    margin-top: 10px;
+                }
+            }
+
+        }
+
+        @media (max-width: $small) {
+
+            .burger-menu-wrapper,
+            #burger-menu-toggler {
+                display: flex;
+            }
+
+            .burger-menu-wrapper {
+                &.opened {
+                    div {
+                        margin: 5px 0;
+                    }
+
+                    .middle {
+                        opacity: 0;
+                    }
+
+                    .top {
+                        transform: rotate(45deg);
+                    }
+
+                    .bottom {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+
+            .nav-wrapper {
+                .right {
+                    width: 0;
+                    height: 500px;
+                    overflow: hidden;
+                    position: absolute;
+                    right: -332px;
+                    top: 0;
+                    z-index: 10;
+                    display: none;
+                    .left{
+                        left: 100px;
+                        top: 10px;
+                    }
+                }
+            }
+
+            #burger-menu-toggler:checked+.nav-wrapper>.right {
+                width: 428px;
+                display: flex;
+                flex-direction: column;
+                padding: 100px;
+
+                .nav-links {
+                    display: flex;
+                    flex-direction: column;
+
+                    button {
+                        text-align: left;
+                    }
+                }
+
+                * {
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 
 }
