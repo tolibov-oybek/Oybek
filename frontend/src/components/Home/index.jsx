@@ -21,8 +21,8 @@ function Home() {
                 <div className="left">
                     <h1>ПУТЕШЕСТВУЙ</h1>
                     <h4>вместе с</h4>
-                    <h1 className="pero"><span style={{marginRight: "15px"}}>PERO</span><span>TRAVEL</span></h1>
-                    <button className="blue-btn">К экскурсиям</button>
+                    <h1 className="pero"><span style={{ marginRight: "15px" }}>PERO</span><span>TRAVEL</span></h1>
+                    <Link to="/excursions"><button className="blue-btn">К экскурсиям</button></Link>
                 </div>
 
                 <div className="icons">
@@ -45,7 +45,7 @@ function Home() {
             <br /><br />
             <Galery />
             <br /><br />
-            <Reviews/>
+            <Reviews />
             <br /><br />
             <ContactsFrom />
             <br /><br />
