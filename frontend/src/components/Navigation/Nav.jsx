@@ -1,20 +1,16 @@
 import Logo from "../../assets/icons/logo.png"
-import { Link, useNavigate } from 'react-router-dom';
-import { context } from "../../store";
-import { useContext } from "react";
+import { Link } from 'react-router-dom';
+import { context } from "../../store"
+import { useContext } from "react"
+import { useTranslation } from "react-i18next";
 function Nav(props) {
     const { store, setStore } = useContext(context);
-    const navigate = useNavigate();
-
-    const goToTeamsHash = () => {
-        navigate('/about');
-        setTimeout(() => {
-            const element = document.getElementById('teams');
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        }, 0);
-    };
+    const { t, i18n: { changeLanguage, language } } = useTranslation();
+    const handleChangeLanguage = () => {
+        const newLanguage = language === "ru" ? "en" : "ru";
+        setStore({ type: "CHANGE_LANG", currentLanguage: newLanguage })
+        changeLanguage(newLanguage);
+    }
     return (
         <nav className="nav-wrapper">
             <div className="right">
@@ -25,9 +21,18 @@ function Nav(props) {
                 </span>
 
 
-                <Link to="/">Главная</Link>
-                <Link to="/excursions">Экскурсии</Link>
-                <Link to="/">Личный кабинет</Link>
+                <Link to="/">
+                    {t("navbar.home")}
+                </Link>
+                <Link to="/excursions">
+                {t("navbar.excursions")}
+                </Link>
+                <Link to="/">
+                {t("navbar.personalArea")}
+                </Link>
+                <span onClick={handleChangeLanguage}>
+                    {language === "en" ? "Eng" : "Рус"}
+                </span>
             </div>
         </nav>
     );

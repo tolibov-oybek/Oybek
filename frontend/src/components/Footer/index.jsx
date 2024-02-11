@@ -7,21 +7,22 @@ import Logo from "../../assets/icons/logoColor.png"
 import Mail from "../../assets/icons/mail.png"
 import Telegram from "../../assets/icons/tg.png"
 import Whatsapp from "../../assets/icons/wh.png"
-
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+    const { t } = useTranslation();
     return (
         <div className="footer-wrapper">
             <Link to={"/"}><img src={Logo} alt="Logo-color" /></Link>
             <div className="links">
-                <Link to="/">Главная</Link>
-                <Link to="/excursions">Экскурсии</Link>
-                <Link to="/">Личный кабинет</Link>
+                <Link to="/">{t("navbar.home")}</Link>
+                <Link to="/excursions">{t("navbar.excursions")}</Link>
+                <Link to="/">{t("navbar.personalArea")}</Link>
             </div>
             <div className="contants">
                 <img src={Whatsapp} alt="whatsapp-icon" />+7 964 944 18 74 <br />
                 <img src={Telegram} alt="telegram-icon" />+7 918 919 98 28 <br />
-                <img src={Telegram} alt="telegram-icon" />Телеграм-бот PeroTravel <br />
+                <img src={Telegram} alt="telegram-icon" />{t("navbar.telegram")} <br />
             </div>
             <div className="icons">
                 <div className="mail">

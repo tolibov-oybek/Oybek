@@ -2,8 +2,10 @@ import "./style.scss"
 import { useState } from "react"
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
-
+import { useTranslation } from "react-i18next";
 function ContactsForm() {
+    const { t } = useTranslation();
+
     const [form, setForm] = useState({
         name: "",
         email: "",
@@ -36,33 +38,33 @@ function ContactsForm() {
         <div className="contancts-f-wrapper">
             <form onSubmit={sendEMailJS_Fn}>
                 <div className="contacts-f-content">
-                    <h1>Остались вопросы?</h1>
-                    <h3>Оставь заявку и мы ответим</h3>
+                    <h1>{t("contactsForm.title")}</h1>
+                    <h3>{t("contactsForm.subtitle")}</h3>
                     <input
                         id="full-name-input" type="text"
-                        placeholder="Имя"
+                        placeholder={t('contactsForm.name')}
                         onChange={MemoryFn} required
                     />
                     <input
                         id="number-input" type="text"
-                        placeholder="Телефон"
+                        placeholder={t('contactsForm.number')}
                         onChange={MemoryFn} name='number' required
                     />
                     <input
                         id="email-input" type="email"
-                        placeholder="Почта"
+                        placeholder={t('contactsForm.email')}
                         onChange={MemoryFn} name='email' required />
                     <textarea
                         id="description-area"
                         cols="10"
                         rows="3"
-                        placeholder="Текст сообщения"
+                        placeholder={t('contactsForm.message')}
                         name='notes'
                         onChange={MemoryFn}
                         required
                     ></textarea>
 
-                    <button className="blue-btn">Оставить заявку</button>
+                    <button className="blue-btn">{t("button.submit")}</button>
                 </div>
             </form>
         </div>

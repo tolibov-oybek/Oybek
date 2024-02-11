@@ -1,12 +1,13 @@
 import "./style.scss"
-import Marquee from "react-fast-marquee";
 import Values from "./Values.jsx"
+import { useTranslation } from "react-i18next";
 function PopularExcursions(props) {
+    const { t } = useTranslation();
     return (
         <div className="p-excursions-wrapper">
             <div className="top">
-                <span>Популярные экскурсии</span>
-                <span>Смотреть все</span>
+                <span>{t("names.pExcursions")}</span>
+                <span>{t("seeAll")}</span>
             </div>
             <Values/>
 

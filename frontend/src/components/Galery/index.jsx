@@ -7,12 +7,14 @@ import Img_5 from "../../assets/imgs/5.png"
 import Img_6 from "../../assets/imgs/6.png"
 import Img_7 from "../../assets/imgs/7.png"
 import Img_8 from "../../assets/imgs/8.png"
+import { useTranslation } from "react-i18next";
 function Galery() {
+    const { t } = useTranslation();
     return (
 
         <div className="galery-wrapper">
             <div className="top">
-                <span>Галерея</span>
+                <span>{t("names.gallery")}</span>
             </div>
             <div className="galery-content">
 

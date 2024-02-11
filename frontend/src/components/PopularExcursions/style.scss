@@ -53,10 +53,11 @@ $Rectangle16: url('../../assets/images/Rectangle16.png');
                             margin: 12px 0;
                             color: #FFC700;
                             size: 14px;
+                            margin-bottom: 0;
                         }
 
                         h6 {
-                            display: inline;
+                            display: inline-block;
                             justify-content: center;
                             align-items: center;
                         }

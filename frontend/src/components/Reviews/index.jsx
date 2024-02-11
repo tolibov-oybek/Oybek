@@ -2,18 +2,22 @@ import "./style.scss"
 import Img_1 from "../../assets/images/photo1.png"
 import Img_2 from "../../assets/images/photo2.png"
 
+import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+
 
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 
 function Reviews() {
+    const { t } = useTranslation();
+
     return (
         <div className="reviews-wrapper">
             <div className="top">
-                <span>Отзывы</span>
-                <span>Смотреть все</span>
+                <span>{t("names.reviews")}</span>
+                <span>{t("seeAll")}</span>
             </div>
             <Swiper
                 slidesPerView={2}
@@ -42,8 +46,8 @@ function Reviews() {
                     <div className="container">
                         <img src={Img_1} alt="Reviews-images-1" />
                         <div>
-                            <h3>Иван Иванов, 25 лет</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>{t("reviews.name")}</h3>
+                            <p>{t("reviews.value")}</p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -51,8 +55,8 @@ function Reviews() {
                     <div className="container">
                         <img src={Img_2} alt="Reviews-images-1" />
                         <div>
-                            <h3>Иван Иванов, 25 лет</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>{t("reviews.name")}</h3>
+                            <p>{t("reviews.value")}</p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -60,8 +64,8 @@ function Reviews() {
                     <div className="container">
                         <img src={Img_1} alt="Reviews-images-1" />
                         <div>
-                            <h3>Иван Иванов, 25 лет</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>{t("reviews.name")}</h3>
+                            <p>{t("reviews.value")}</p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -69,8 +73,8 @@ function Reviews() {
                     <div className="container">
                         <img src={Img_2} alt="Reviews-images-1" />
                         <div>
-                            <h3>Иван Иванов, 25 лет</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>{t("reviews.name")}</h3>
+                            <p>{t("reviews.value")}</p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -78,8 +82,8 @@ function Reviews() {
                     <div className="container">
                         <img src={Img_1} alt="Reviews-images-1" />
                         <div>
-                            <h3>Иван Иванов, 25 лет</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>{t("reviews.name")}</h3>
+                            <p>{t("reviews.value")}</p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -87,12 +91,13 @@ function Reviews() {
                     <div className="container">
                         <img src={Img_2} alt="Reviews-images-1" />
                         <div>
-                            <h3>Иван Иванов, 25 лет</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h3>{t("reviews.name")}</h3>
+                            <p>{t("reviews.value")}</p>
                         </div>
                     </div>
                 </SwiperSlide>
 
+               
                 <div className="slider-controler">
                     <div className="swiper-button-prev slider-arrow">
                         <ion-icon name="arrow-back-outline"></ion-icon>

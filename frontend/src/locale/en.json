@@ -1,0 +1,88 @@
+{
+    "translation": {
+        "seeAll": "See all",
+        "names": {
+            "gallery": "Gallery",
+            "pExcursions": "Popular excursions",
+            "tExcursions": "Types of excursions",
+            "about": "About",
+            "reviews": "Reviews"
+        },
+        "navbar": {
+            "home": "Home",
+            "excursions": "Excursions",
+            "personalArea": "Personal Area",
+            "telegram": "Telegram bot PeroTravel"
+        },
+        "homePage": {
+            "travel": "TRAVEL",
+            "with": "together with"
+        },
+        "button": {
+            "forExcursions": "For excursions",
+            "moreDetails": "More details",
+            "submit": "Submit your application"
+        },
+        "about": {
+            "value1": "PeroTravel - The first online service for booking excursions without queues or operators. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "value2": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+        },
+        "reviews": {
+            "name": "Ivan Ivanov, 25 years old",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "tExcursions": {
+            "text":"Choose an excursion on our website that is right for you and sign up online without queues, simply and quickly!",
+            "first": {
+                "title": "Bus tour",
+                "subtitle": "One of the most exciting, affordable and popular types of recreation. During one trip you can see the sights of several cities at once, and it will cost almost several times less than a classic sightseeing tour with overnight stays in hotels."
+            },
+            "second": {
+                "title": "Jeeping",
+                "subtitle": "This is a trip in off-road vehicles overcoming natural obstacles; it is an extreme sport and recreation, which involves driving a tourist route off-road in vehicles."
+            },
+            "third": {
+                "title": "Yachting",
+                "subtitle": "This is the same as a cruise on a liner or a trip on a ferry, only on a yacht there is more freedom, the size of the vessel is several times smaller, there is no annoying crew, you can feel like a captain yourself, stand at the helm. It is here that you will feel the greatest expanses of the Montenegrin Sea."
+            },
+            "fourth": {
+                "title": "Canyoning",
+                "subtitle": "This is an extreme sports type of recreation, which consists of overcoming canyons (flooded or not) with the help of climbing and other equipment, and sometimes wading, but without boats or other watercraft."
+            }
+        },
+        "pExcursions": {
+            "first": {
+                "title": "Bus tour",
+                "place": "Sightseeing tour of Sochi (from Adler)",
+                "time": "6 hours",
+                "subtitle": "We invite you on a tour'Overview of Greater Sochi':The excursion will begin with a climb to Mount Bolshoy Akhun - this is the highest point (665 meters) on the coast of Sochi. At the top of Mount Bolshoi Akhun there is an observation tower, built in 1935-36 according to the design of the architect S.I. Vorobyov..."
+            },
+            "second": {
+                "title": "Horse riding tour",
+                "place": "Horse rides",
+                "time": "1,5 hour",
+                "subtitle": "Horseback riding takes place in the Azure Valley. The valley offers beautiful views of the sea, mountains and forest. Experienced instructors will accompany you throughout the excursion. Horseback riding or hippotherapy is very beneficial for children and adults..."
+            },
+            "third": {
+                "title": "Quad tour",
+                "place": "Mouth of the Dragon",
+                "time": "2,5 hours",
+                "subtitle": "The ATV route runs along the Mzymta mountain river along white rocks and boxwood forest to the Glubokiy Yar waterfall or “Dragon’s Mouth” (excursion name). The height of the waterfall is 41.5 meters - it is one of the highest waterfalls in Greater Sochi..."
+            },
+            "fourth": {
+                "title": "Bus tour",
+                "place": "Convent",
+                "time": "4 hours",
+                "subtitle": "The Trinity - St. George Convent is located in the village of Lesnoye in a picturesque place, which harmoniously combines the beauty of nature and the beauty of architecture created by human hands. This amazing place is located very close to the Black Sea - just 20 kilometers"
+            }
+        },
+        "contactsForm": {
+            "title": "Still have questions?",
+            "subtitle": "Leave a request and we will respond",
+            "name": "Name",
+            "number": "Number",
+            "email": "Email",
+            "message": "Text message"
+        }
+    }
+}

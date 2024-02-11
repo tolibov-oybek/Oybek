@@ -1,8 +1,7 @@
 function globalReducer(state, payload) {
     switch (payload.type) {
-        case "increment":
-            return { ...state, count: state.count + 1 }
-
+            case "CHANGE_LANG":
+                return { ...state, lang: payload.currentLanguage }
         default:
             return state
     }

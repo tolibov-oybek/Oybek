@@ -11,18 +11,19 @@ import About from "../About"
 import Galery from "../Galery"
 import Reviews from "../Reviews"
 import ContactsFrom from "../ContactsForm"
-
+import { useTranslation } from "react-i18next";
 
 function Home() {
+    const { t } = useTranslation();
     return (
         <div className="home-wrapper">
             <div className="home-content">
 
                 <div className="left">
-                    <h1>ПУТЕШЕСТВУЙ</h1>
-                    <h4>вместе с</h4>
+                    <h1>{t("homePage.travel")}</h1>
+                    <h4>{t("homePage.with")}</h4>
                     <h1 className="pero"><span style={{ marginRight: "15px" }}>PERO</span><span>TRAVEL</span></h1>
-                    <Link to="/excursions"><button className="blue-btn">К экскурсиям</button></Link>
+                    <Link to="/excursions"><button className="blue-btn">{t("button.forExcursions")}</button></Link>
                 </div>
 
                 <div className="icons">
